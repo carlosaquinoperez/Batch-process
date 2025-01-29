@@ -9,8 +9,9 @@ This project demonstrates a data pipeline that processes CSV files in micro-batc
 3. [Setup Instructions](#setup-instructions)
 4. [Pipeline Execution](#pipeline-execution)
 5. [Troubleshooting](#troubleshooting)
-6. [Project Structure](#project-structure)
-7. [License](#license)
+6. [Example Results](#example-results)
+7. [Project Structure](#project-structure)
+8. [License](#license)
 
 ## Overview
 The pipeline performs the following:
@@ -78,7 +79,16 @@ cd <repository-folder>
    \dt
    ```
 
-3. Exit the database:
+3. If the table does not exist, create it:
+   ```sql
+   CREATE TABLE public.transactions (
+       timestamp TIMESTAMP,
+       price NUMERIC,
+       user_id INT
+   );
+   ```
+
+4. Exit the database:
    ```bash
    \q
    ```
@@ -111,6 +121,16 @@ cd <repository-folder>
   ```bash
   sudo docker exec -it airflow-scheduler airflow scheduler
   ```
+
+## Example Results
+After successfully running the pipeline, the statistics will be logged to the console. Example:
+
+```bash
+Processed /opt/airflow/dags/data/2012-1.csv | Rows: 50 | Min: 5 | Max: 100 | Avg: 52.5
+Processed /opt/airflow/dags/data/2012-2.csv | Rows: 100 | Min: 5 | Max: 120 | Avg: 63.0
+...
+Database Statistics: Rows: 500, Avg: 60.0, Min: 5, Max: 150
+```
 
 ## Project Structure
 ```
