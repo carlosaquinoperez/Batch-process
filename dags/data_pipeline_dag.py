@@ -18,7 +18,7 @@ from main import query_db_statistics  # Import the statistics query function
 # Default arguments applied to all tasks in the DAG
 default_args = {
     "owner": "airflow",
-    "start_date": datetime(2023, 1, 1),
+    "start_date": datetime(2025, 1, 1),
     "retries": 1,
 }
 
