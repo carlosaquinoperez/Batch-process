@@ -1,0 +1,14 @@
+[2025-01-29T04:01:08.869+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline_dag.process_2012-3_csv manual__2025-01-29T04:00:57.353548+00:00 [queued]>
+[2025-01-29T04:01:09.010+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline_dag.process_2012-3_csv manual__2025-01-29T04:00:57.353548+00:00 [queued]>
+[2025-01-29T04:01:09.011+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-01-29T04:01:09.283+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): process_2012-3_csv> on 2025-01-29 04:00:57.353548+00:00
+[2025-01-29T04:01:09.329+0000] {standard_task_runner.py:57} INFO - Started process 2534 to run task
+[2025-01-29T04:01:09.365+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'data_pipeline_dag', 'process_2012-3_csv', 'manual__2025-01-29T04:00:57.353548+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmplqpsxds4']
+[2025-01-29T04:01:09.398+0000] {standard_task_runner.py:85} INFO - Job 20: Subtask process_2012-3_csv
+[2025-01-29T04:01:10.121+0000] {task_command.py:410} INFO - Running <TaskInstance: data_pipeline_dag.process_2012-3_csv manual__2025-01-29T04:00:57.353548+00:00 [running]> on host bbe8f3f0f995
+[2025-01-29T04:01:11.467+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_pipeline_dag' AIRFLOW_CTX_TASK_ID='process_2012-3_csv' AIRFLOW_CTX_EXECUTION_DATE='2025-01-29T04:00:57.353548+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-29T04:00:57.353548+00:00'
+[2025-01-29T04:01:11.530+0000] {logging_mixin.py:150} INFO - Processed /opt/airflow/dags/data/2012-3.csv | Rows: 31 | Min: 12 | Max: 99 | Avg: 59.67741935483871
+[2025-01-29T04:01:11.531+0000] {python.py:183} INFO - Done. Returned value was: None
+[2025-01-29T04:01:11.670+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=data_pipeline_dag, task_id=process_2012-3_csv, execution_date=20250129T040057, start_date=20250129T040108, end_date=20250129T040111
+[2025-01-29T04:01:11.854+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-01-29T04:01:11.980+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

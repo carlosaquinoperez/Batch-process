@@ -1,0 +1,14 @@
+[2025-01-29T03:28:26.690+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_pipeline_dag.process_csv_files manual__2025-01-29T03:28:24.445071+00:00 [queued]>
+[2025-01-29T03:28:26.703+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_pipeline_dag.process_csv_files manual__2025-01-29T03:28:24.445071+00:00 [queued]>
+[2025-01-29T03:28:26.704+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-01-29T03:28:26.727+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): process_csv_files> on 2025-01-29 03:28:24.445071+00:00
+[2025-01-29T03:28:26.735+0000] {standard_task_runner.py:57} INFO - Started process 2042 to run task
+[2025-01-29T03:28:26.742+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'data_pipeline_dag', 'process_csv_files', 'manual__2025-01-29T03:28:24.445071+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/data_pipeline_dag.py', '--cfg-path', '/tmp/tmpq_u22r_j']
+[2025-01-29T03:28:26.746+0000] {standard_task_runner.py:85} INFO - Job 10: Subtask process_csv_files
+[2025-01-29T03:28:26.860+0000] {task_command.py:410} INFO - Running <TaskInstance: data_pipeline_dag.process_csv_files manual__2025-01-29T03:28:24.445071+00:00 [running]> on host bbe8f3f0f995
+[2025-01-29T03:28:27.042+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='data_pipeline_dag' AIRFLOW_CTX_TASK_ID='process_csv_files' AIRFLOW_CTX_EXECUTION_DATE='2025-01-29T03:28:24.445071+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-29T03:28:24.445071+00:00'
+[2025-01-29T03:28:27.071+0000] {logging_mixin.py:150} INFO - Processed /opt/airflow/dags/data/2012-1.csv | Rows: 22 | Min: 14.0 | Max: 97.0 | Avg: nan
+[2025-01-29T03:28:27.072+0000] {python.py:183} INFO - Done. Returned value was: None
+[2025-01-29T03:28:27.095+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=data_pipeline_dag, task_id=process_csv_files, execution_date=20250129T032824, start_date=20250129T032826, end_date=20250129T032827
+[2025-01-29T03:28:27.157+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-01-29T03:28:27.206+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
