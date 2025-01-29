@@ -4118,3 +4118,115 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 [2025-01-29T13:39:07.167+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:39:07.166+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2025-01-29T13:39:07.236+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:39:07.236+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
 [2025-01-29T13:39:07.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.931 seconds
+[2025-01-29T13:39:37.462+0000] {processor.py:157} INFO - Started process (PID=587) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:39:37.482+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:39:37.484+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:39:37.483+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:39:38.015+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:39:38.071+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:39:38.070+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:39:38.116+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:39:38.116+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:39:38.151+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.695 seconds
+[2025-01-29T13:40:08.283+0000] {processor.py:157} INFO - Started process (PID=594) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:08.307+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:40:08.309+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:08.309+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:08.836+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:08.886+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:08.886+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:40:08.923+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:08.922+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:40:08.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.675 seconds
+[2025-01-29T13:40:39.157+0000] {processor.py:157} INFO - Started process (PID=601) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:39.158+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:40:39.159+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:39.159+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:39.716+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:40:39.762+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:39.762+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:40:39.799+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:40:39.799+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:40:39.829+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.679 seconds
+[2025-01-29T13:41:10.015+0000] {processor.py:157} INFO - Started process (PID=608) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:10.031+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:41:10.032+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:10.032+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:10.555+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:10.606+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:10.605+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:41:10.641+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:10.641+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:41:10.670+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.662 seconds
+[2025-01-29T13:41:40.862+0000] {processor.py:157} INFO - Started process (PID=615) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:40.864+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:41:40.865+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:40.865+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:41.386+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:41:41.432+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:41.432+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:41:41.469+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:41:41.469+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:41:41.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.644 seconds
+[2025-01-29T13:42:11.717+0000] {processor.py:157} INFO - Started process (PID=622) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:11.733+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:42:11.735+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:11.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:12.440+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:12.505+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:12.503+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:42:12.556+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:12.555+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:42:12.594+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.887 seconds
+[2025-01-29T13:42:42.802+0000] {processor.py:157} INFO - Started process (PID=629) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:42.804+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:42:42.806+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:42.805+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:43.400+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:42:43.462+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:43.460+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:42:43.504+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:42:43.504+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:42:43.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.750 seconds
+[2025-01-29T13:43:13.750+0000] {processor.py:157} INFO - Started process (PID=636) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:13.764+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:43:13.766+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:13.765+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:14.303+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:14.362+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:14.361+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:43:14.404+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:14.404+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:43:14.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.692 seconds
+[2025-01-29T13:43:44.533+0000] {processor.py:157} INFO - Started process (PID=643) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:44.535+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:43:44.536+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:44.536+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:45.064+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:43:45.113+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:45.113+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:43:45.150+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:43:45.150+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:43:45.183+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.656 seconds
+[2025-01-29T13:44:15.387+0000] {processor.py:157} INFO - Started process (PID=650) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:15.435+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:44:15.436+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:15.436+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:15.971+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:16.019+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:16.018+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:44:16.057+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:16.056+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:44:16.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.703 seconds
+[2025-01-29T13:44:46.271+0000] {processor.py:157} INFO - Started process (PID=657) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:46.294+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:44:46.296+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:46.295+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:46.812+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:44:46.863+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:46.862+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:44:46.902+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:44:46.901+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:44:46.932+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.667 seconds
+[2025-01-29T13:45:17.148+0000] {processor.py:157} INFO - Started process (PID=664) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:17.150+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:45:17.151+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:17.151+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:17.774+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:17.829+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:17.828+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:45:17.874+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:17.873+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:45:17.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.766 seconds
+[2025-01-29T13:45:48.102+0000] {processor.py:157} INFO - Started process (PID=671) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:48.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:45:48.140+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:48.140+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:48.648+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:45:48.698+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:48.697+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:45:48.734+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:45:48.733+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:45:48.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.663 seconds
+[2025-01-29T13:46:18.944+0000] {processor.py:157} INFO - Started process (PID=678) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:18.945+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:46:18.947+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:18.946+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:19.542+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:19.589+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:19.589+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:46:19.626+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:19.626+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:46:19.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.716 seconds
+[2025-01-29T13:46:49.835+0000] {processor.py:157} INFO - Started process (PID=685) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:49.916+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:46:49.918+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:49.917+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:50.504+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:46:50.554+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:50.553+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:46:50.591+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:46:50.590+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:46:50.619+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.791 seconds
+[2025-01-29T13:47:20.840+0000] {processor.py:157} INFO - Started process (PID=692) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:47:20.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T13:47:20.843+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:47:20.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:47:21.373+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T13:47:21.422+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:47:21.421+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T13:47:21.462+0000] {logging_mixin.py:150} INFO - [2025-01-29T13:47:21.462+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T13:47:21.491+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.657 seconds

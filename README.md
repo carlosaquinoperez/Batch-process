@@ -150,6 +150,7 @@ process_validation_csv: | Rows: 8 | Min: 11 | Max: 92 | Avg: 41.75
 ...
 Database Statistics: Rows: 151, Avg: 55.4966887417218543, Min: 0, Max: 100
 ```
+![Results](images/graph.png)
 
 ## Checking results
 The following validations are performed to meet the requirements:
