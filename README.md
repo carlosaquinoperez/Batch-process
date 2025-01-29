@@ -68,6 +68,8 @@ cd <repository-folder>
    ```
 
 5. Access the Airflow UI at [http://localhost:8080](http://localhost:8080).
+   - Username: `admin`
+   - Password: `admin`
 
 ### Step 3: Set Up the Data Directory
 1. Place all CSV files (2012-1.csv to validation.csv) in the `data` directory inside the `dags` folder:
