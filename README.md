@@ -86,8 +86,10 @@ cd <repository-folder>
 ## Pipeline Execution
 1. Navigate to the Airflow UI at [http://localhost:8080](http://localhost:8080).
 2. Activate the `data_pipeline_dag`.
+![DAG](images/dag.png)
 3. Trigger the DAG by clicking on the "Trigger DAG" button.
 4. Monitor the tasks in the Airflow UI to ensure successful execution.
+![DAG execution](images/execution.png)
 
 ## Troubleshooting
 - **Permission Errors**:
