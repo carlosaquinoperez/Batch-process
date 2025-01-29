@@ -21,9 +21,21 @@ The pipeline performs the following:
 
 ## Prerequisites
 Ensure you have the following installed:
-- Docker and Docker Compose
-- Python 3.7+
-- Git
+
+### Operating System
+- **Ubuntu** (Recommended version: 20.04 or later)
+
+### Software
+- **Docker**: Used to create and manage containers for PostgreSQL and Airflow.
+- **Docker Compose**: To orchestrate multiple Docker containers.
+- **Python 3.7+**: For running the processing scripts.
+- **Git**: For cloning and managing the repository.
+
+### Python Libraries
+Install the following Python libraries using `pip`:
+```bash
+pip install pandas psycopg2 sqlalchemy
+```
 
 ## Setup Instructions
 
