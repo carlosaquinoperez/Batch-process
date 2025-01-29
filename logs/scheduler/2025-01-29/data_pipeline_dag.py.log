@@ -3593,3 +3593,10 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 [2025-01-29T05:10:55.664+0000] {logging_mixin.py:150} INFO - [2025-01-29T05:10:55.663+0000] {dag.py:2742} INFO - Sync 1 DAGs
 [2025-01-29T05:10:55.704+0000] {logging_mixin.py:150} INFO - [2025-01-29T05:10:55.703+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
 [2025-01-29T05:10:55.930+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 0.963 seconds
+[2025-01-29T05:11:26.176+0000] {processor.py:157} INFO - Started process (PID=3572) to work on /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T05:11:26.178+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/data_pipeline_dag.py for tasks to queue
+[2025-01-29T05:11:26.180+0000] {logging_mixin.py:150} INFO - [2025-01-29T05:11:26.179+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T05:11:26.955+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data_pipeline_dag']) retrieved from /opt/airflow/dags/data_pipeline_dag.py
+[2025-01-29T05:11:27.086+0000] {logging_mixin.py:150} INFO - [2025-01-29T05:11:27.085+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-01-29T05:11:27.460+0000] {logging_mixin.py:150} INFO - [2025-01-29T05:11:27.460+0000] {dag.py:3508} INFO - Setting next_dagrun for data_pipeline_dag to None, run_after=None
+[2025-01-29T05:11:27.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/data_pipeline_dag.py took 1.329 seconds
