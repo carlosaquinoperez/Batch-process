@@ -10,8 +10,9 @@ This project demonstrates a data pipeline that processes CSV files in micro-batc
 4. [Pipeline Execution](#pipeline-execution)
 5. [Troubleshooting](#troubleshooting)
 6. [Example Results](#example-results)
-7. [Project Structure](#project-structure)
-8. [License](#license)
+7. [Checking results](#checking-results)
+8. [Project Structure](#project-structure)
+9. [License](#license)
 
 ## Overview
 The pipeline performs the following:
@@ -140,11 +141,55 @@ cd <repository-folder>
 After successfully running the pipeline, the statistics will be logged to the console. Example:
 
 ```bash
-Processed /opt/airflow/dags/data/2012-1.csv | Rows: 50 | Min: 5 | Max: 100 | Avg: 52.5
-Processed /opt/airflow/dags/data/2012-2.csv | Rows: 100 | Min: 5 | Max: 120 | Avg: 63.0
+process_2012-1_csv: | Rows: 22 | Min: 0 | Max: 97.0 | Avg: 54.22727272727273
+process_2012-2_csv: | Rows: 29 | Min: 10 | Max: 100 | Avg: 54.827586206896555
+process_2012-3_csv: | Rows: 31 | Min: 12 | Max: 99 | Avg: 59.67741935483871
+process_2012-4_csv: | Rows: 30 | Min: 0 | Max: 97.0 | Avg: 53.56666666666667
+process_2012-5_csv: | Rows: 31 | Min: 13 | Max: 100 | Avg: 58.25806451612903
+process_validation_csv: | Rows: 8 | Min: 11 | Max: 92 | Avg: 41.75
 ...
-Database Statistics: Rows: 500, Avg: 60.0, Min: 5, Max: 150
+Database Statistics: Rows: 151, Avg: 55.4966887417218543, Min: 0, Max: 100
 ```
+
+## Checking results
+The following validations are performed to meet the requirements:
+
+1. **Print the current statistics dynamically:**
+   This is handled in the `process_csv` function within `main.py`. After processing each chunk of the CSV file, the following code updates and logs the statistics:
+   ```python
+   print(
+       f"Processed {file_path} | Rows: {row_count} | Min: {price_min} | Max: {price_max} | "
+       f"Avg: {price_sum / row_count if row_count > 0 else 'NaN'}"
+   )
+   ```
+
+2. **Query the database for overall statistics:**
+   The `query_db_statistics` function in `main.py` executes a SQL query to retrieve the total count, average, minimum, and maximum values from the database:
+   ```python
+   cursor.execute(
+       "SELECT COUNT(*) as total_rows, AVG(price) as avg_price, MIN(price) as min_price, MAX(price) as max_price FROM public.transactions"
+   )
+   result = cursor.fetchone()
+   print(
+       f"Database Statistics: Rows: {result[0]}, "
+       f"Avg: {result[1] if result[1] is not None else 'NaN'}, "
+       f"Min: {result[2] if result[2] is not None else 'NaN'}, "
+       f"Max: {result[3] if result[3] is not None else 'NaN'}"
+   )
+   ```
+
+3. **Execute `validation.csv` through the pipeline:**
+   The validation file is processed separately using:
+   ```python
+   validation_file = os.path.join(data_dir, "validation.csv")
+   if os.path.exists(validation_file):
+       print(f"Processing validation file: {validation_file}")
+       process_csv(validation_file)
+       query_db_statistics()
+   ```
+
+4. **Log the final statistics:**
+   After the `validation.csv` file is processed, the final statistics are logged, showing the impact of the validation file on the database.
 
 ## Project Structure
 ```
