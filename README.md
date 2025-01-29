@@ -125,4 +125,4 @@ cd <repository-folder>
 ```
 
 ## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as needed.
+This project is licensed under the MIT License by Carlos Aquino Perez.
